@@ -1,1 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work — Smokesmedia Ltd</title>
+  <meta name="description" content="Portfolio work by Smokesmedia Ltd." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="./">
+      <img class="logo" src="assets/img/logo.png" alt="Smokesmedia logo">
+      <div class="brand-title">
+        <strong>Smokesmedia Ltd</strong>
+        <span>Work</span>
+      </div>
+    </a>
+
+    <nav class="links">
+      <a href="./">Home</a>
+      <a class="pill" href="./contact.html">Contact</a>
+    </nav>
+
+    <button class="menu-btn" data-open-drawer>Menu</button>
+  </div>
+</header>
+
+<div class="drawer" data-drawer>
+  <div class="drawer-panel">
+    <div class="row">
+      <strong>Menu</strong>
+      <button class="icon-btn" data-close-drawer>Close</button>
+    </div>
+    <nav>
+      <a href="./">Home <small>Back to landing</small></a>
+      <a href="./contact.html">Contact <small>Email + socials</small></a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="kicker">Portfolio</div>
+      <h1 style="margin-bottom:8px;">Selected work</h1>
+      <p class="lead">Click to view details. Add video links later for “Watch”.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="masonry">
+        <!-- Map your uploaded work images to these -->
+        <div class="tile" data-tile
+          data-title="Hyrox — motion frame"
+          data-client="Event / Athlete"
+          data-tag="Photo"
+          data-desc="High-energy black & white frames with motion and grit."
+          data-image="assets/img/work-1.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/work-1.jpg" alt="">
+          <div class="cap">
+            <div class="t"><strong>Hyrox — motion frame</strong><span>Event / Athlete</span></div>
+            <div class="badge">Photo</div>
+          </div>
+        </div>
+
+        <div class="tile" data-tile
+          data-title="Athlete portrait"
+          data-client="Brand / Sponsor"
+          data-tag="Campaign"
+          data-desc="Strong hero portrait for social + ads."
+          data-image="assets/img/work-2.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/work-2.jpg" alt="">
+          <div class="cap">
+            <div class="t"><strong>Athlete portrait</strong><span>Brand / Sponsor</span></div>
+            <div class="badge">Campaign</div>
+          </div>
+        </div>
+
+        <div class="tile" data-tile
+          data-title="Hyrox — blur + speed"
+          data-client="Event / Athlete"
+          data-tag="Photo"
+          data-desc="Motion blur for pace and atmosphere."
+          data-image="assets/img/work-3.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/work-3.jpg" alt="">
+          <div class="cap">
+            <div class="t"><strong>Hyrox — blur + speed</strong><span>Event / Athlete</span></div>
+            <div class="badge">Photo</div>
+          </div>
+        </div>
+
+        <div class="tile" data-tile
+          data-title="Hyrox — strength"
+          data-client="Event / Athlete"
+          data-tag="Photo"
+          data-desc="Clean composition with brand environment."
+          data-image="assets/img/work-4.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/work-4.jpg" alt="">
+          <div class="cap">
+            <div class="t"><strong>Hyrox — strength</strong><span>Event / Athlete</span></div>
+            <div class="badge">Photo</div>
+          </div>
+        </div>
+
+        <div class="tile" data-tile
+          data-title="Red light portrait"
+          data-client="Brand / Product"
+          data-tag="Photo"
+          data-desc="Premium lighting for product/campaign visuals."
+          data-image="assets/img/work-5.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/work-5.jpg" alt="">
+          <div class="cap">
+            <div class="t"><strong>Red light portrait</strong><span>Brand / Product</span></div>
+            <div class="badge">Photo</div>
+          </div>
+        </div>
+
+        <div class="tile" data-tile
+          data-title="Red light portrait — alt"
+          data-client="Brand / Product"
+          data-tag="Photo"
+          data-desc="Variation for campaign selection."
+          data-image="assets/img/work-6.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/work-6.jpg" alt="">
+          <div class="cap">
+            <div class="t"><strong>Red light portrait — alt</strong><span>Brand / Product</span></div>
+            <div class="badge">Photo</div>
+          </div>
+        </div>
+
+        <div class="tile" data-tile
+          data-title="Red light hero"
+          data-client="Brand / Product"
+          data-tag="Campaign"
+          data-desc="Hero image for ad creative."
+          data-image="assets/img/work-7.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/work-7.jpg" alt="">
+          <div class="cap">
+            <div class="t"><strong>Red light hero</strong><span>Brand / Product</span></div>
+            <div class="badge">Campaign</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    © <span data-year></span> Smokesmedia Ltd • <a href="./contact.html">Contact</a>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal" data-modal>
+  <div class="modal-inner">
+    <div class="modal-top">
+      <div class="meta">
+        <strong data-modal-title>Project</strong>
+        <span data-modal-sub></span>
+      </div>
+      <button class="icon-btn" data-modal-close>Close</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-media">
+        <img data-modal-img src="" alt="">
+      </div>
+      <div class="modal-info">
+        <div class="badge" data-modal-tag style="margin-bottom:10px;">Work</div>
+        <p data-modal-desc></p>
+
+        <div class="modal-actions">
+          <a class="btn primary" data-modal-watch href="#" target="_blank" rel="noreferrer">Watch</a>
+          <a class="btn" data-modal-ig href="#" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="btn" href="./contact.html">Book / Enquire</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
