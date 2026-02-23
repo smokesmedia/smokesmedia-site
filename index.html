@@ -1,14 +1,252 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Smokesmedia Ltd</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smokesmedia Ltd — Visual-first video & content</title>
+  <meta name="description" content="Smokesmedia Ltd — video, photo and social-first content. Portfolio + client work." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+<body>
 
-<body style="background:#0b0c10;color:white;font-family:Arial;text-align:center;padding:60px">
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="./">
+      <img class="logo" src="assets/img/logo.png" alt="Smokesmedia logo">
+      <div class="brand-title">
+        <strong>Smokesmedia Ltd</strong>
+        <span>Video • Photo • Social</span>
+      </div>
+    </a>
 
-<h1>Smokesmedia Ltd</h1>
-<p>Your site is live 🚀</p>
+    <nav class="links">
+      <a href="./work.html">Work</a>
+      <a href="./contact.html">Contact</a>
+      <a class="pill" href="./work.html">View portfolio</a>
+    </nav>
 
+    <button class="menu-btn" data-open-drawer>Menu</button>
+  </div>
+</header>
+
+<!-- Mobile Drawer -->
+<div class="drawer" data-drawer>
+  <div class="drawer-panel">
+    <div class="row">
+      <strong>Menu</strong>
+      <button class="icon-btn" data-close-drawer>Close</button>
+    </div>
+    <nav>
+      <a href="./work.html">Work <small>Projects & highlights</small></a>
+      <a href="./contact.html">Contact <small>Email + socials</small></a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="hero">
+    <div class="container hero-top">
+      <div>
+        <div class="kicker">Smokesmedia Ltd</div>
+        <h1>Premium visuals.<br/>Social-first results.</h1>
+        <p class="lead">
+          Video + photography for brands, athletes and events. Clean edits, cinematic frames, fast turnaround.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="./work.html">View work</a>
+          <a class="btn" href="./contact.html">Book / Enquire</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div class="mini">
+          <div>📍 UK-based</div>
+          <div>🎬 Short-form & long-form</div>
+          <div>📸 Event / brand / athlete shoots</div>
+          <div>⚡ Monthly content retainers available</div>
+        </div>
+        <div class="note">Tip: we can swap this copy to match your exact services.</div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Featured</h2>
+        <p>Click a tile to view details.</p>
+      </div>
+
+      <!-- Masonry grid: mix of YOU + work -->
+      <div class="masonry">
+        <!-- Replace these image paths with your uploaded files -->
+        <div class="tile" data-tile
+          data-title="Behind the scenes"
+          data-client="Smokesmedia"
+          data-tag="Brand"
+          data-desc="On-location coverage and BTS moments that build trust and show process."
+          data-image="assets/img/me-1.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/me-1.jpg" alt="Smokesmedia BTS">
+          <div class="cap">
+            <div class="t"><strong>Behind the scenes</strong><span>Smokesmedia</span></div>
+            <div class="badge">Brand</div>
+          </div>
+        </div>
+
+        <div class="tile" data-tile
+          data-title="Hyrox coverage"
+          data-client="Event / Athlete"
+          data-tag="Photo"
+          data-desc="Cinematic black & white frames with motion and atmosphere."
+          data-image="assets/img/work-1.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/work-1.jpg" alt="Hyrox photo">
+          <div class="cap">
+            <div class="t"><strong>Hyrox coverage</strong><span>Event / Athlete</span></div>
+            <div class="badge">Photo</div>
+          </div>
+        </div>
+
+        <div class="tile" data-tile
+          data-title="Athlete portrait set"
+          data-client="Brand / Sponsor"
+          data-tag="Campaign"
+          data-desc="Studio-style portraits with dramatic lighting for ads + socials."
+          data-image="assets/img/work-6.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/work-6.jpg" alt="Athlete portrait">
+          <div class="cap">
+            <div class="t"><strong>Athlete portrait set</strong><span>Brand / Sponsor</span></div>
+            <div class="badge">Campaign</div>
+          </div>
+        </div>
+
+        <div class="tile" data-tile
+          data-title="Creator at work"
+          data-client="Smokesmedia"
+          data-tag="BTS"
+          data-desc="Candid shots for about pages and press kits."
+          data-image="assets/img/me-2.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/me-2.jpg" alt="Creator at work">
+          <div class="cap">
+            <div class="t"><strong>Creator at work</strong><span>Smokesmedia</span></div>
+            <div class="badge">BTS</div>
+          </div>
+        </div>
+
+        <div class="tile" data-tile
+          data-title="Hyrox action frame"
+          data-client="Event / Athlete"
+          data-tag="Photo"
+          data-desc="Action + motion blur frames that feel fast and energetic."
+          data-image="assets/img/work-3.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/work-3.jpg" alt="Hyrox action">
+          <div class="cap">
+            <div class="t"><strong>Hyrox action frame</strong><span>Event / Athlete</span></div>
+            <div class="badge">Photo</div>
+          </div>
+        </div>
+
+        <div class="tile" data-tile
+          data-title="Campaign portrait (red light)"
+          data-client="Brand / Product"
+          data-tag="Photo"
+          data-desc="Premium hero images for product + paid ads."
+          data-image="assets/img/work-7.jpg"
+          data-watch="#"
+          data-ig="#">
+          <img src="assets/img/work-7.jpg" alt="Campaign portrait">
+          <div class="cap">
+            <div class="t"><strong>Campaign portrait</strong><span>Brand / Product</span></div>
+            <div class="badge">Photo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-row" style="margin-top:14px;">
+        <a class="btn primary" href="./work.html">See full portfolio</a>
+        <a class="btn" href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div class="card">
+        <h2 style="margin:0 0 8px;">What I do</h2>
+        <p>
+          Video production, photography, and social-first editing. Perfect for brands who need consistent,
+          high-quality content without the agency overhead.
+        </p>
+        <ul class="list">
+          <li>Event coverage (photo + video)</li>
+          <li>Athlete / brand campaigns</li>
+          <li>Reels / TikTok edits + cutdowns</li>
+          <li>Monthly content packages</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 style="margin:0 0 8px;">How it works</h2>
+        <p>
+          Quick briefing → shoot → edit → delivery in formats ready for socials and ads.
+          If you’ve got a deadline, I’ll work backwards from it.
+        </p>
+        <div class="cta-row" style="margin-top:12px;">
+          <a class="btn primary" href="./contact.html">Enquire</a>
+          <a class="btn" href="./work.html">Browse work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    © <span data-year></span> Smokesmedia Ltd • <a href="https://instagram.com/smokesmedia" target="_blank" rel="noreferrer">Instagram</a>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal" data-modal>
+  <div class="modal-inner">
+    <div class="modal-top">
+      <div class="meta">
+        <strong data-modal-title>Project</strong>
+        <span data-modal-sub></span>
+      </div>
+      <button class="icon-btn" data-modal-close>Close</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-media">
+        <img data-modal-img src="" alt="">
+      </div>
+      <div class="modal-info">
+        <div class="badge" data-modal-tag style="margin-bottom:10px;">Work</div>
+        <p data-modal-desc></p>
+
+        <div class="modal-actions">
+          <a class="btn primary" data-modal-watch href="#" target="_blank" rel="noreferrer">Watch</a>
+          <a class="btn" data-modal-ig href="#" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="btn" href="./contact.html">Book / Enquire</a>
+        </div>
+
+        <div class="note">We can swap “Watch” to YouTube/Vimeo links when you send them.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
